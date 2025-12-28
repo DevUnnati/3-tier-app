@@ -1,17 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-app
+  name: three-tier-dev
   namespace: argocd
   labels:
-    app: dev-app
+    app: three-tier
     environment: dev
 spec:
   project: default
   source:
-    repoURL: https://github.com/DevUnnati/gitops-1.git
+    repoURL: https://github.com/your-org/3-tier-app.git
     targetRevision: main
-    path: overlay/dev/
+    path: k8s/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: app-dev
+    namespace: three-tier-dev
+ 
