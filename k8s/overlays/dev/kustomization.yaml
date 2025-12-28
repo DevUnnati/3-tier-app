@@ -5,7 +5,7 @@ resources:
   - ../../base
 images:
   - name: backend
-    newName: chanchal8765/backend
+    newName: chanchal8765/backend-app
     newTag: latest
   - name: frontend
     newName: chanchal8765/frontend

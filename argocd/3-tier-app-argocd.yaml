@@ -7,7 +7,7 @@ metadata:
     app: three-tier
     environment: dev
 spec:
-  project: 3-tier-app
+  project: default
   source:
     repoURL: https://github.com/DevUnnati/3-tier-app.git
     targetRevision: main
@@ -15,4 +15,5 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
- 
+  
+  
