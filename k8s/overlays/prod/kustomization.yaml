@@ -3,8 +3,6 @@ kind: Kustomization
 namespace: app-prod
 resources:
   - ../../k8s/base
-patchesStrategicMerge:
-  - backend-replicas.yaml
 images:
   - name: backend
     newName: backend
