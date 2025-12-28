@@ -1,0 +1,11 @@
+# Node
+node_modules
+
+# Java/Maven
+backend/target
+
+# Vite build
+frontend/dist
+
+# OS & misc
+.DS_Store
